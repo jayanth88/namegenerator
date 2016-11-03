@@ -1,6 +1,21 @@
 var prefix = ["Mega" , "Fatale" ," Maximus"];
 var suffix = ["Wolf" , "Dog" ," Joker"];
 
+var ob = "BOO"
+$.ajax({
+        'async': true,
+        'cache': true,
+        'url': "http://jparayilkumarji.com/namegenerator/data/data.json",
+        'dataType': "json",
+        'success': function (data) {
+            ob = data;
+            prefix = ob.adjective;
+            suffix = ob.noun
+            console.log(ob);
+            console.log(suffix);
+        }
+
+    });
 
 $("#test").click(function() {
   generateTeamName();
@@ -29,5 +44,4 @@ function explode(){
         'background-color': color
 	}).text("VIOLS");
 	$('random-name-result').append($newDiv);
-	
 }
