@@ -6,7 +6,7 @@ $.ajax({
         'async': true,
         'cache': true,
         'url': "http://jparayilkumarji.com/namegenerator/data/data.json",
-        'dataType': "json",
+        'dataType': "application/json",
         'success': function (data) {
             ob = data;
             prefix = ob.adjective;
