@@ -5,8 +5,8 @@ var ob = "BOO"
 $.ajax({
         'async': true,
         'cache': true,
-        'url': "http://jparayilkumarji.com/namegenerator/data/data.json",
-        'dataType': "application/json",
+        'url': "https://api.myjson.com/bins/2x3pa",
+        'dataType': "json",
         'success': function (data) {
             ob = data;
             prefix = ob.adjective;
